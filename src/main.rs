@@ -8,26 +8,26 @@ fn main() {
         num2 = String::from("");
         num = String::from("");
 
-        println!("Введите число A");
+        println!("Enter a number A");
         match io::stdin().read_line(&mut num) {
             Ok(_) => {}
             Err(e) => {
-                println!("Фатальная ошибка - {}", e);
+                println!("Fatal error - {}", e);
             }
         }
-        println!("Введите число B");
+        println!("Enter a number B");
         match io::stdin().read_line(&mut num2) {
             Ok(_) => {
             }
             Err(e) => {
-                println!("Фатальная ошибка - {}", e);
+                println!("Fatal errorа - {}", e);
             }
         }
         println!("Выбирайте 1 - +, 2 - -, 3 - *, 4 - /");
         match io::stdin().read_line(&mut num3) {
             Ok(_) => {}
             Err(e) => {
-                println!("Фатальная ошибка - {}", e);
+                println!("Fatal error - {}", e);
             }
         }
         let mut re = 0;
@@ -61,7 +61,7 @@ fn main() {
             let r:f64 = b / a;
             println!("{}", r);
         } else {
-            println!("Ошибка")
+            println!("Fatal error")
         }
     }
 }
